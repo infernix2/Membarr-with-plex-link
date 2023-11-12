@@ -274,7 +274,7 @@ class app(commands.Cog):
                             if plexhelper.plexadd(plex,email,Plex_LIBS):
                                 db.save_user_email(str(after.id), email)
                                 await asyncio.sleep(5)
-                                await embedinfo(after, 'You have Been Added To Plex! Login to plex and accept the invite!')
+                                await embedinfo(after, 'You have Been Added To Plex! Login to plex and accept the invite! Click here to download Plex https://tinyurl.com/KiwiPlex')
                             else:
                                 await embedinfo(after, 'There was an error adding this email address. Message Server Admin.')
                         plex_processed = True
